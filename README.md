@@ -1,65 +1,63 @@
-# song-lyrics-nlp
-Song lyrics NLP project
+# 🎶 Song Lyrics NLP Project
 
-# 🎵 Song Lyrics NLP – Şarkı Sözlerinden Öneri Sistemi
+Bu proje, şarkı sözleri üzerinden doğal dil işleme (NLP) teknikleri kullanılarak analiz ve temsil yöntemlerini araştırmaktadır. Amaç, metinsel verilerin temizlenmesi, ön işlenmesi ve makine öğrenmesi modellerine uygun hale getirilerek vektörleştirme yöntemleriyle anlamlı temsil edilmesidir.
 
-Bu proje, şarkı sözlerinden yola çıkarak içerik tabanlı bir öneri sistemi geliştirmeyi amaçlar.  
-TF-IDF ve Word2Vec gibi vektörleştirme yöntemleri ile şarkıların anlamsal yakınlıkları çıkarılır ve benzer şarkılar önerilir.
+## 🧠 Proje Amacı
 
+ Şarkı sözleri gibi yapısı düzensiz ve duygusal yüklü metinlerin işlenmesi
+-NLP teknikleri ile temizleme, önişleme, gömme (embedding) yöntemlerinin uygulanması
+-Gömülü kelime temsilleri (TF-IDF & Word2Vec) üretip modellemeye hazır hale getirmek
 
-## 📂 Veri Seti
+## 🧰 Kullanılan Kütüphaneler
 
-- **Kaynak**: Kaggle  
-- **Veri adı**: `spotify_millsongdata.csv`  
-- **İçerik**: 55.000'den fazla şarkı sözü, sanatçı adı ve bağlantı içerir  
-- **Amaç**: Şarkıların sözlerine göre öneri yapmak
+| Kütüphane | Kullanım Amacı |
+| `pandas` | Veri okuma ve CSV dosyaları ile çalışma |
+| `numpy` | Sayısal işlemler ve matris hesaplamaları |
+| `re` | Regex ile metin temizleme işlemleri |
+| `nltk` | Tokenizasyon, stopword temizliği, lemmatization, stemming |
+| `gensim` | Word2Vec modeli ile kelime gömme (embedding) işlemleri |
+| `sklearn` | TF-IDF vektörleştirme, veri bölme ve diğer preprocessing işlemleri |
+| `matplotlib`, `seaborn` *(isteğe bağlı)* | Görselleştirme ve analiz grafikleri oluşturma |
 
-Örnek sütunlar:  
-- `artist`: Şarkıcı adı  
-- `song`: Şarkı adı  
-- `text`: Şarkı sözleri
-
-
-## 🔧 Uygulanan Adımlar
-
-1. **Veri Yükleme** – Kaggle’dan alınan CSV veri seti okundu  
-2. **Ön İşleme** – Temizlik, küçük harf, noktalama, stopword, lemmatization, stemming  
-3. **Zipf Analizi** – Ham ve temizlenmiş verilerde dağılım grafikleri oluşturuldu  
-4. **Vektörleştirme**  
-   - TF-IDF: Belge temsili (1000 kelimeye indirgenmiş)  
-   - Word2Vec: 8 farklı parametre kombinasyonu ile model eğitildi  
-5. **Öneri Sistemleri**  
-   - TF-IDF + cosine similarity  
-   - Word2Vec + vektör ortalaması + cosine similarity  
-6. **Benzerlik Testi ve Görselleştirme**  
-   - PCA ile 2D gösterim  
-   - Bar plot ile en benzer kelimeler  
-7. **Kıyaslama ve Sonuç**  
-   - TF-IDF vs Word2Vec karşılaştırıldı  
+## ⚙️ Uygulanan NLP İş Akışı
 
 
 
-## ⚙️ Gerekli Kütüphaneler ve Kurulum
+1. **Veri Temizleme (Preprocessing)**
+   -Küçük harfe çevirme
+   -Sayılar ve noktalama işaretlerinin silinmesi
+   -Gereksiz boşlukların ve karakterlerin temizlenmesi
 
-Projeyi çalıştırmadan önce aşağıdaki Python kütüphanelerinin kurulu olması gerekir:
+2. **Stopword Temizliği**
+    Türkçe ve İngilizce stopword listeleri ile anlam taşımayan kelimeler çıkarıldı.
 
-pip install pandas numpy matplotlib scikit-learn gensim nltk 
+3. **Lemmatization & Stemming**
+   -`nltk.WordNetLemmatizer` ve `PorterStemmer` ile kelimelerin kök halleri elde edildi.
 
-Ayrıca nltk veri kaynakları (stopwords, punkt, wordnet) indirilmelidir:
+4. **Vektörleştirme (Text Embedding)**
+    **TF-IDF**: Kelime frekanslarına dayalı vektör temsil
+    **Word2Vec**: Kelime ilişkilerini öğrenen gömme modeli (CBOW/Skip-gram)
 
-import nltk
-nltk.download("punkt")
-nltk.download("stopwords")
-nltk.download("wordnet")
+## 📁 Dosya Yapısı
+
+| Dosya | Açıklama |
+| `nlp_project.ipynb` | Ana proje not defteri. Tüm işlemler buradan yürütülmektedir. |
+| `cleaned_lemmatized.csv` | Temizlenmiş ve lemmatize edilmiş şarkı sözleri |
+| `cleaned_stemmed.csv` | Temizlenmiş ve stem uygulanmış şarkı sözleri |
+| `.gitignore` | Büyük boyutlu dosyaların (model, checkpoint) dışlanması için kullanılır |
+| `README.md` | Proje tanıtımı, açıklamalar ve kullanım kılavuzu |
+
+> ⚠️ Not: `.model` dosyaları (Word2Vec çıktıları) ve `.ipynb_checkpoints/` klasörü `.gitignore` ile hariç tutulmuştur. Modelin nasıl üretildiği kod ile gösterilmiştir.
 
 
-## 📈 Sonuç ve Değerlendirme
 
-Bu projede şarkı sözlerinden yola çıkarak içerik tabanlı bir öneri sistemi geliştirilmiştir.  
-TF-IDF ve Word2Vec yöntemleri ile öneriler yapılmış, benzerlik skorları görselleştirilmiş ve semantik benzerlik test edilmiştir.
+## 📊 Modelleme Notları
 
-- **TF-IDF** daha yüzeysel benzerlikleri yakalarken,
-- **Word2Vec**, anlam bütünlüğünü daha iyi yakalayarak daha doğal öneriler üretmiştir.
+-**Word2Vec** modelleri farklı parametrelerle (`window`, `size`, `sg`, `hs`) eğitildi.
+-Eğitim sonucunda toplamda 16 farklı model oluşturuldu.
+-TF-IDF çıktıları ile karşılaştırmalı analiz yapılabilir hale getirildi.
 
-Gelecekte, bu sisteme kullanıcı verileri de entegre edilerek daha güçlü, **hibrit bir öneri sistemi** oluşturulabilir.
+## 🚀 Kurulum ve Kullanım
 
+1. Projeyi klonlayın veya indirin:
+https://github.com/muhmmdrncbr/song-lyrics-nlp
