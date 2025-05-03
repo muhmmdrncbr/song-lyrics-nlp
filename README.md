@@ -11,8 +11,8 @@ Bu projede kullanılan veri seti, çeşitli müzik türlerinden ve sanatçılard
 
 | ✅ Özellik         | 📄 Açıklama                                                                 |
 |--------------------|-----------------------------------------------------------------------------|
-| 📉 Veri Boyutu      | Yaklaşık 10.000+ şarkı sözü satırı içerir                                 |
-| 📂 İçerik           | Her satırda bir şarkı dizesi vardır. Sanatçı/tür bilgisi içermez          |
+| 📉 Veri Boyutu      | Yaklaşık 55.000+ şarkı sözü satırı içerir                                 |
+| 📂 İçerik           | Her satırda bir şarkı dizesi vardır. Sanatçı/tür bilgisi içerir         |
 | 📅 Format           | `.csv` uzantılıdır; metin verisi içerir                                   |
 | ✨ Versiyonlama     | `cleaned_lemmatized.csv` ve `cleaned_stemmed.csv` olarak ikiye ayrıldı    |
 | 🦜 Ön İşleme        | Noktalama, sayı, özel karakter temizliği + lemmatization & stemming       |
