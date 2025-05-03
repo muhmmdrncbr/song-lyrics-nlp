@@ -1,0 +1,4 @@
+*.model
+.ipynb_checkpoints/
+tfidf_lemmatized.csv
+tfidf_stemmed.csv
