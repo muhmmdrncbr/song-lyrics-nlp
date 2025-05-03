@@ -1,125 +1,103 @@
-🎶 Song Lyrics NLP Project
 
-Bu proje, şarkı sözleri üzerinden doğal dil işleme (NLP) teknikleri kullanılarak analiz ve temsil yöntemlerini araştırmaktadır. Amaç, metinsel verilerin temizlenmesi, ön işlenmesi ve makine öğrenmesi modellerine uygun hale getirilerek vektörleştirme yöntemleriyle anlamlı temsil edilmesidir.
+# 🎶 Song Lyrics NLP Project
 
-📊 Veri Seti Hakkında
+Bu proje, şarkı sözleri üzerinden doğal dil işleme (NLP) teknikleri kullanılarak analiz ve temsil yöntemlerini araştırmaktadır. Amaç, metinsel verilerin temizlenmesi, ön işlenmesi ve makine öğrenmesi modellerine uygun hale getirilerek vektörleştirme yöntemleriyle anlamlı hale getirilmesidir.
+
+---
+
+## 📊 Veri Seti Hakkında
 
 Bu projede kullanılan veri seti, çeşitli müzik türlerinden ve sanatçılardan derlenmiş şarkı sözlerinden oluşmaktadır. Veri seti, şarkı sözlerini temel alarak dil işleme teknikleri ile analiz yapmayı mümkün kılar.
 
+| ✅ Özellik         | 📄 Açıklama                                                                 |
+|--------------------|-----------------------------------------------------------------------------|
+| 📉 Veri Boyutu      | Yaklaşık 10.000+ şarkı sözü satırı içerir                                 |
+| 📂 İçerik           | Her satırda bir şarkı dizesi vardır. Sanatçı/tür bilgisi içermez          |
+| 📅 Format           | `.csv` uzantılıdır; metin verisi içerir                                   |
+| ✨ Versiyonlama     | `cleaned_lemmatized.csv` ve `cleaned_stemmed.csv` olarak ikiye ayrıldı    |
+| 🦜 Ön İşleme        | Noktalama, sayı, özel karakter temizliği + lemmatization & stemming       |
+| 🔍 Kullanım Amacı   | Word2Vec, TF-IDF, kelime gömme (embedding) analizlerinde kullanılmıştır   |
 
+> ⚠️ **Not**: Bu veri seti kamuya açık değildir. Akademik çalışma amacıyla sınırlı kullanılmıştır.
 
-✅ Özellik                     📄 Açıklama
+---
 
-📉 Veri Boyutu                 Toplamda yaklaşık 10.000+ şarkı sözü satırı içerir.
+## 🧠 Proje Amacı
 
-📂 İçerik                      Her satırda bir şarkı dizesi vardır.Sanatçı/tür bilgisi yer almaz.
+- Şarkı sözleri gibi düzensiz yapılı ve duygusal içerikli metinlerin analiz edilmesi  
+- NLP ön işleme teknikleri ile verilerin temizlenmesi  
+- TF-IDF ve Word2Vec gibi vektörleştirme yöntemleriyle metnin temsil edilmesi  
 
-📅 Format                      .csv uzantılı, metin verisi içerir.
+---
 
-✨ Versiyonlama                cleaned_lemmatized.csv ve cleaned_stemmed.csv olarak iki farklı versiyona ayrıldı.
+## 🧰 Kullanılan Kütüphaneler
 
-🦜 Ön İşleme                   Noktalama, sayılar, özel karakterler temizlenip; lemmatization ve stemming uygulandı.
+| 🛋️ Kütüphane       | 🌟 Kullanım Amacı                                                  |
+|--------------------|---------------------------------------------------------------------|
+| `pandas`           | CSV dosyalarının işlenmesi, veri çerçevesi işlemleri               |
+| `numpy`            | Sayısal hesaplamalar, matris/dizi işlemleri                        |
+| `re`               | Regex ile metin temizleme                                          |
+| `nltk`             | Tokenization, stopword temizliği, lemmatization, stemming          |
+| `gensim`           | Word2Vec modeliyle kelime vektörleştirme                           |
+| `scikit-learn`     | TF-IDF, eğitim-test bölme, metin vektörleştirme                    |
+| `matplotlib`, `seaborn` | Grafiksel görselleştirme ve analiz (opsiyonel)              |
 
-🔍 Kullanım Amaçları            Word2Vec, TF-IDF, embedding analizleri için kullanıldı.
+---
 
+## ⚙️ NLP İş Akışı
 
+1. **Veri Temizleme**
+   - Küçük harfe dönüştürme
+   - Noktalama, sayılar ve özel karakterlerin temizlenmesi
+   - Boşluk ve tekrar eden karakterlerin kaldırılması
 
+2. **Stopword Temizliği**
+   - `nltk.corpus.stopwords` kullanılarak TR/EN stopword'lerin silinmesi
 
-⚠️ Not: Bu veri seti kamuya açık değildir. Akademik çalışma amacıyla sınırlı kullanılmıştır.
+3. **Lemmatization & Stemming**
+   - `WordNetLemmatizer` ve `PorterStemmer` kullanımı
 
+4. **Vektörleştirme**
+   - **TF-IDF**: Kelime sıklığına dayalı temsil
+   - **Word2Vec**: Anlamsal bağlamı dikkate alan kelime gömme (CBOW/Skip-gram)
 
+---
 
-🧠 Proje Amacı
+## 📁 Dosya Yapısı
 
-*Şarkı sözleri gibi düzensiz yapılı ve duygusal içerikli metinlerin işlenmesi
+| 📄 Dosya/Klasör             | 📅 Açıklama                                                                   |
+|-----------------------------|-------------------------------------------------------------------------------|
+| `nlp_project.ipynb`         | Ana proje dosyası (temizleme, vektörleştirme, modelleme)                     |
+| `cleaned_lemmatized.csv`    | Lemmatize edilmiş, temizlenmiş şarkı verileri                                |
+| `cleaned_stemmed.csv`       | Stem uygulanmış, temizlenmiş şarkı verileri                                  |
+| `.gitignore`                | Büyük dosyaların (model/checkpoint) hariç tutulması için yapılandırma        |
+| `README.md`                 | Proje açıklaması, iş akışı, kurulum ve kullanım bilgileri                    |
 
-*NLP ön işleme teknikleri ile temizleme ve düzenleme
+---
 
-*TF-IDF ve Word2Vec gibi vektörleştirme yöntemleriyle metni temsil edilebilir hale getirme
+## 📊 Modelleme Notları
 
+- Word2Vec modelleri farklı parametrelerle (`vector size`, `window`, `sg`, `hs`) eğitildi  
+- Toplamda **16 farklı Word2Vec modeli** üretildi  
+- TF-IDF çıktıları ile karşılaştırmalı analizler yapılabilir hale getirildi  
 
-🧰️ Kullanılan Kütüphaneler
+---
 
-🛋️ Kütüphane                 🌟 Kullanım Amacı
+## 🚀 Kurulum ve Kullanım
 
-pandas                        Veri çerçevesi oluşturma, CSV işlemleri
+1. Repoyu klonlayın veya ZIP olarak indirin:
+   ```
+   https://github.com/muhmmdrncbr/song-lyrics-nlp
+   ```
 
-numpy                         Dizi, matris ve sayısal hesaplamalar
+2. Gerekli kütüphaneleri yükleyin (requirements.txt varsa):
+   ```
+   pip install -r requirements.txt
+   ```
 
-re                            Regular Expression (regex) ile metin temizleme
+3. `nlp_project.ipynb` dosyasını Jupyter Notebook veya VSCode üzerinden çalıştırın.
 
-nltk                          Tokenizasyon, stopword temizliği, lemmatizasyon, stemming
+---
 
-gensim                        Word2Vec modeli ile kelime vektörleri oluşturma
-
-scikit-learn                  TF-IDF vektörleştirme, veri bölme, ön işleme
-
-matplotlib, seaborn           Grafik çizimi ve görselleştirme (isteğe bağlı)
-
-
-
-⚙️ Uygulanan NLP İŞ Akışı
-
-1)Veri Temizleme:
-
-*Küçük harfe çevirme
-
-*Sayı, noktalama ve özel karakterlerin silinmesi
-
-*Boşluk ve tekrar eden karakter temizliği
-
-2)Stopword Temizliği:
-
-*nltk.corpus.stopwords ile anlamsız kelimelerin silinmesi (TR/EN)
-
-3)Lemmatization & Stemming:
-
-*WordNetLemmatizer ve PorterStemmer kullanıldı
-
-4)Vektörleştirme:
-
-*TF-IDF: Kelime frekansına dayalı temsiller
-
-*Word2Vec: Anlamsal bağlam temelli kelime vektörleri (CBOW/Skip-gram)
-
-
-
-📁 Dosya Yapısı
-
-📄 Dosya/Klasör                📅 Açıklama
-
-nlp_project.ipynb              Ana Proje(temizleme, vektörleştirme, modelleme)
-
-cleaned_lemmatized.csv         Lemmatize edilmiş, temizlenmiş şarkı verileri
- 
-cleaned_stemmed.csv            Stem uygulanmış, temizlenmiş şarkı verileri
-
-.gitignore                     Model/ara çıktılar gibi büyük dosyaları ignore etmek için
-
-README.md                      Proje tanıtımı, kurulum, iş akışı ve açıklamalar
-
-
-
-📊 Modelleme Notları
-
-*Word2Vec modelleri farklı parametrelerle (vector size, window, sg, hs) eğitildi.
-
-*Toplamda 16 farklı Word2Vec modeli eğitildi.
-
-*TF-IDF çıktıları ile kıyaslama ve görsel analizler yapılabilir.
-
-🚀 Kurulum ve Kullanım
-
-1)Repoyu klonlayın veya ZIP olarak indirin:
-
-https://github.com/muhmmdrncbr/song-lyrics-nlp
-
-2)Ortamınızda gerekli kütüphaneleri yükleyin:
-
-pip install -r requirements.txt  # (varsa)
-
-3)nlp_project.ipynb dosyasını açın ve adım adım çalıştırın.
-
-Hazırlayan: @muhmmdrncbr
-
-Proje sadece akademik amaçlarla geliştirilmiştir.
+**Hazırlayan:** [@muhmmdrncbr](https://github.com/muhmmdrncbr)  
+**Not:** Bu proje yalnızca akademik amaçla geliştirilmiştir.
