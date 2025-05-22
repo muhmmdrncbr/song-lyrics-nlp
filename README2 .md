@@ -10,11 +10,11 @@ Bu projede kullanılan ham veri, farklı tür ve sanatçılardan derlenmiş **55
 
 | Özellik           | Açıklama                                                               |
 | ----------------- | ---------------------------------------------------------------------- |
-| 🎵 Satır Sayısı   | Yaklaşık **55.650** şarkı sözü                                         |
+| 🎵 Satır Sayısı   | Yaklaşık **55.650** şarkı sözü satırı                                  |
 | 📂 İçerik         | Her satırda bir şarkı sözü; `artist`, `song`, `cleaned_text` sütunları |
 | 📄 Dosya Formatı  | CSV (`.csv`)                                                           |
 | ✨ Versiyonlama    | `cleaned_lemmatized.csv` ve `cleaned_stemmed.csv`                      |
-| 🛠️ Ön İşleme     | Noktalama, rakam, özel karakter temizliği + lemmetizasyon & stemming   |
+| 🛠️ Ön İşleme     | Noktalama, rakam, özel karakter temizliği + lemmatization & stemming   |
 | 🔍 Kullanım Amacı | TF-IDF, Word2Vec (embedding) analizleri                                |
 
 > **Not:** Veri seti kamuya açık değildir; akademik çalışma amacıyla sınırlı kullanılmıştır.
@@ -28,8 +28,8 @@ Aşağıdaki adımları izleyerek projeyi çalıştırabilirsiniz:
 1. **Repoyu klonlayın**
 
    ```bash
-   git clone https://github.com/muhmmdrncbr/song-lyrics-nlp
-   cd sarki-onerici
+   git clone https://github.com/muhmmdrncbr/song-lyrics-nlp.git
+   cd song-lyrics-nlp
    ```
 2. **Sanal ortam oluşturun ve aktif edin**
 
@@ -70,9 +70,7 @@ Aşağıdaki adımları izleyerek projeyi çalıştırabilirsiniz:
 ```text
 ├── data/                 # Temizlenmiş CSV dosyaları
 ├── models/               # Word2Vec .model dosyaları
-├── notebooks/            # Jupyter notebook analiz dosyası
 ├── results/              # Benzerlik sonuçları (CSV)
-├── figures/              # Grafik ve rapor çıktıları
 ├── requirements.txt      # Bağımlılıklar
 └── README.md             # Proje dokümantasyonu
 ```
@@ -119,10 +117,21 @@ Bu bölümde, proje süresince elde edilen başlıca bulgular özetlenmekte ve m
 2. **Kaynak ve Hız Öncelikli Senaryolar**: TF‑IDF ile hızlı ön filtreleme, ardından Word2Vec tabanlı derinlemesine analiz önerilir.
 3. **Hibrit Yaklaşımlar**: TF‑IDF ile olası adayları daraltıp, Word2Vec ile anlamsal seçki yapmak performansı ve doğruluğu birlikte optimize eder.
 
+---
+
 ## 📚 Kaynakça
 
-* Salton, G. & McGill, M. J. (1983). *Introduction to Modern Information Retrieval*.
-* Mikolov, T. et al. (2013). *Efficient Estimation of Word Representations in Vector Space*.
-* Pedregosa, F. et al. (2011). *Scikit-learn: Machine Learning in Python*.
-* Rehurek, R. & Sojka, P. (2010). *Software Framework for Topic Modelling with Large Corpora*.
-* Hunter, J. D. (2007). *Matplotlib: A 2D Graphics Environment*.
+* Natural Language Toolkit (NLTK) Documentation: [https://www.nltk.org/](https://www.nltk.org/)
+  → Metin işleme, tokenization, stopword, lemmatization ve stemming işlemleri için kullanıldı.
+* Gensim Documentation: [https://radimrehurek.com/gensim/](https://radimrehurek.com/gensim/)
+  → Word2Vec algoritmasının uygulanması ve eğitiminde kullanıldı.
+* Scikit-learn Documentation: [https://scikit-learn.org/stable/](https://scikit-learn.org/stable/)
+  → TF-IDF vektörleştirme, veri ön işleme ve modelleme için yararlanıldı.
+* Pandas Documentation: [https://pandas.pydata.org/](https://pandas.pydata.org/)
+  → CSV dosyalarının okunması, veri çerçevesi işlemleri ve temizleme süreçlerinde kullanıldı.
+* Regex Reference (Python re module): [https://docs.python.org/3/library/re.html](https://docs.python.org/3/library/re.html)
+  → Metinlerden özel karakterleri temizlemek ve desen eşleştirme işlemleri için kullanıldı.
+* Proje Reposu (GitHub): [https://github.com/muhmmdrncbr/song-lyrics-nlp](https://github.com/muhmmdrncbr/song-lyrics-nlp)
+  → Tüm proje kodlarına ve temiz veri dosyalarına buradan ulaşılabilir.
+* DBS Gümüşhane Üniversitesi: [https://dbs.gumushane.edu.tr/course/view.php?id=20035](https://dbs.gumushane.edu.tr/course/view.php?id=20035)
+  → Gerekli bilgiler için dersteki PDF’ler kullanıldı.
