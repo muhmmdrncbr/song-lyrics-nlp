@@ -1,0 +1,11 @@
+Model,Rank,Doc Index,Similarity,Snippet,Semantic Score
+TF-IDF Lemmatized,1,42081,0.6542,wasnt shamed fair say wanted work gave chance wasnt hurt thats credit im worth d...,4
+TF-IDF Lemmatized,2,31210,0.6148,knew first night met something wasnt quite right loving like innocent stranger s...,2
+TF-IDF Lemmatized,3,33890,0.5998,wasnt fooling around everythings true said take seriously darling please take wa...,1
+TF-IDF Lemmatized,4,52656,0.569,wasnt wasnt know weather gonna fine cant see cross streamline love wait daytime ...,1
+TF-IDF Lemmatized,5,43337,0.5605,wasnt mercy wasnt love wasnt kindness could stand wasnt cleansing wasnt blood wa...,1
+TF-IDF Stemmed,1,14378,0.6626,truth like viral infect gop develop vaccin get shot local christian read room ma...,4
+TF-IDF Stemmed,2,42081,0.6487,wasnt shame fair say want work gave chanc wasnt hurt that credit im worth dont t...,3
+TF-IDF Stemmed,3,31210,0.6211,knew first night met someth wasnt quit right love like innoc stranger somethin s...,2
+TF-IDF Stemmed,4,52656,0.5712,wasnt wasnt know weather gonna fine cant see cross streamlin love wait daytim ca...,1
+TF-IDF Stemmed,5,33890,0.5516,wasnt fool around everyth true said take serious darl pleas take wasnt fool arou...,1

@@ -1,0 +1,81 @@
+Model,Rank,Doc Index,Similarity,Snippet,Semantic Score
+word2vec_lemmatized_vs100_w10_sg0_hs0,1,44667,0.9014,couldnt wait came late wasnt didnt care im sinking low go one goit bed share spe...,3
+word2vec_lemmatized_vs100_w10_sg0_hs0,2,52107,0.8891,made love cant say goodbye youre way ill never know turn left turn right say you...,2
+word2vec_lemmatized_vs100_w10_sg0_hs0,3,12200,0.882,lost day found know know there thing wouldnt yesterday rough weather dear didnt ...,2
+word2vec_lemmatized_vs100_w10_sg0_hs0,4,56605,0.8795,didnt sleep wink last night cause walked night sittin rottin hoping youd come kn...,2
+word2vec_lemmatized_vs100_w10_sg0_hs0,5,1420,0.8793,didnt say wasnt ready romance didnt promise would friend danced though slow danc...,2
+word2vec_lemmatized_vs100_w10_sg0_hs1,1,14927,0.8304,speed light slows feather hit ground nothing else get proved always faster sound...,1
+word2vec_lemmatized_vs100_w10_sg0_hs1,2,44667,0.8284,couldnt wait came late wasnt didnt care im sinking low go one goit bed share spe...,1
+word2vec_lemmatized_vs100_w10_sg0_hs1,3,52107,0.8283,made love cant say goodbye youre way ill never know turn left turn right say you...,1
+word2vec_lemmatized_vs100_w10_sg0_hs1,4,56605,0.8277,didnt sleep wink last night cause walked night sittin rottin hoping youd come kn...,1
+word2vec_lemmatized_vs100_w10_sg0_hs1,5,39689,0.8216,kissed one last time would held much langer id known itd last time could forget ...,1
+word2vec_lemmatized_vs100_w10_sg1_hs0,1,12242,0.9555,close paradise closer like im along ride happened unexpectedly promised wouldnt ...,5
+word2vec_lemmatized_vs100_w10_sg1_hs0,2,38236,0.953,watching movie night tv actress reminded attitude way smiled doin part girl like...,5
+word2vec_lemmatized_vs100_w10_sg1_hs0,3,52107,0.952,made love cant say goodbye youre way ill never know turn left turn right say you...,5
+word2vec_lemmatized_vs100_w10_sg1_hs0,4,17595,0.9518,say wanna see city light cause shine bright calling go need know wont stand way ...,5
+word2vec_lemmatized_vs100_w10_sg1_hs0,5,34974,0.9515,broken glass cigarette writing wall bargain summer thought one gave everything o...,5
+word2vec_lemmatized_vs100_w10_sg1_hs1,1,52117,0.9589,heard come home late last night moved quietly key door light stair thinking dont...,5
+word2vec_lemmatized_vs100_w10_sg1_hs1,2,17595,0.9583,say wanna see city light cause shine bright calling go need know wont stand way ...,5
+word2vec_lemmatized_vs100_w10_sg1_hs1,3,12200,0.9582,lost day found know know there thing wouldnt yesterday rough weather dear didnt ...,5
+word2vec_lemmatized_vs100_w10_sg1_hs1,4,52107,0.9579,made love cant say goodbye youre way ill never know turn left turn right say you...,5
+word2vec_lemmatized_vs100_w10_sg1_hs1,5,1420,0.9577,didnt say wasnt ready romance didnt promise would friend danced though slow danc...,5
+word2vec_lemmatized_vs100_w5_sg0_hs0,1,44667,0.9275,couldnt wait came late wasnt didnt care im sinking low go one goit bed share spe...,3
+word2vec_lemmatized_vs100_w5_sg0_hs0,2,1420,0.915,didnt say wasnt ready romance didnt promise would friend danced though slow danc...,3
+word2vec_lemmatized_vs100_w5_sg0_hs0,3,56605,0.915,didnt sleep wink last night cause walked night sittin rottin hoping youd come kn...,3
+word2vec_lemmatized_vs100_w5_sg0_hs0,4,52107,0.9123,made love cant say goodbye youre way ill never know turn left turn right say you...,3
+word2vec_lemmatized_vs100_w5_sg0_hs0,5,19964,0.9121,thought id seen change thought knew well back page there tale tell guess saw did...,3
+word2vec_lemmatized_vs100_w5_sg0_hs1,1,12242,0.8864,close paradise closer like im along ride happened unexpectedly promised wouldnt ...,2
+word2vec_lemmatized_vs100_w5_sg0_hs1,2,14927,0.8802,speed light slows feather hit ground nothing else get proved always faster sound...,2
+word2vec_lemmatized_vs100_w5_sg0_hs1,3,52117,0.8771,heard come home late last night moved quietly key door light stair thinking dont...,2
+word2vec_lemmatized_vs100_w5_sg0_hs1,4,1420,0.8765,didnt say wasnt ready romance didnt promise would friend danced though slow danc...,2
+word2vec_lemmatized_vs100_w5_sg0_hs1,5,39689,0.8765,kissed one last time would held much langer id known itd last time could forget ...,2
+word2vec_lemmatized_vs100_w5_sg1_hs0,1,12242,0.9531,close paradise closer like im along ride happened unexpectedly promised wouldnt ...,5
+word2vec_lemmatized_vs100_w5_sg1_hs0,2,12200,0.9519,lost day found know know there thing wouldnt yesterday rough weather dear didnt ...,5
+word2vec_lemmatized_vs100_w5_sg1_hs0,3,52107,0.9517,made love cant say goodbye youre way ill never know turn left turn right say you...,5
+word2vec_lemmatized_vs100_w5_sg1_hs0,4,1420,0.9499,didnt say wasnt ready romance didnt promise would friend danced though slow danc...,4
+word2vec_lemmatized_vs100_w5_sg1_hs0,5,54842,0.9496,sometimes snow come june sometimes sun go round moon see passion eye sometimes b...,4
+word2vec_lemmatized_vs100_w5_sg1_hs1,1,52117,0.9497,heard come home late last night moved quietly key door light stair thinking dont...,4
+word2vec_lemmatized_vs100_w5_sg1_hs1,2,12242,0.9496,close paradise closer like im along ride happened unexpectedly promised wouldnt ...,4
+word2vec_lemmatized_vs100_w5_sg1_hs1,3,1420,0.9487,didnt say wasnt ready romance didnt promise would friend danced though slow danc...,4
+word2vec_lemmatized_vs100_w5_sg1_hs1,4,52107,0.9486,made love cant say goodbye youre way ill never know turn left turn right say you...,4
+word2vec_lemmatized_vs100_w5_sg1_hs1,5,38236,0.948,watching movie night tv actress reminded attitude way smiled doin part girl like...,4
+word2vec_stemmed_vs100_w10_sg0_hs0,1,44667,0.9094,couldnt wait came late wasnt didnt care im sinking low go one goit bed share spe...,3
+word2vec_stemmed_vs100_w10_sg0_hs0,2,19964,0.894,thought id seen change thought knew well back page there tale tell guess saw did...,2
+word2vec_stemmed_vs100_w10_sg0_hs0,3,1420,0.8899,didnt say wasnt ready romance didnt promise would friend danced though slow danc...,2
+word2vec_stemmed_vs100_w10_sg0_hs0,4,37408,0.8879,friend needed one wasnt dont know id done gave back something missing could turn...,2
+word2vec_stemmed_vs100_w10_sg0_hs0,5,56605,0.8871,didnt sleep wink last night cause walked night sittin rottin hoping youd come kn...,2
+word2vec_stemmed_vs100_w10_sg0_hs1,1,37408,0.843,friend needed one wasnt dont know id done gave back something missing could turn...,1
+word2vec_stemmed_vs100_w10_sg0_hs1,2,19964,0.8403,thought id seen change thought knew well back page there tale tell guess saw did...,1
+word2vec_stemmed_vs100_w10_sg0_hs1,3,11450,0.833,im fortyone moon full make love well touch like touch like mademoiselle youre fr...,1
+word2vec_stemmed_vs100_w10_sg0_hs1,4,44667,0.8328,couldnt wait came late wasnt didnt care im sinking low go one goit bed share spe...,1
+word2vec_stemmed_vs100_w10_sg0_hs1,5,1420,0.8324,didnt say wasnt ready romance didnt promise would friend danced though slow danc...,1
+word2vec_stemmed_vs100_w10_sg1_hs0,1,11450,0.9534,im fortyone moon full make love well touch like touch like mademoiselle youre fr...,5
+word2vec_stemmed_vs100_w10_sg1_hs0,2,50507,0.9526,many time said forever said love would always true somethin heart always knew id...,5
+word2vec_stemmed_vs100_w10_sg1_hs0,3,1420,0.9519,didnt say wasnt ready romance didnt promise would friend danced though slow danc...,5
+word2vec_stemmed_vs100_w10_sg1_hs0,4,34744,0.9512,wish could tell word would come wrong oh knew way felt long know world apart don...,5
+word2vec_stemmed_vs100_w10_sg1_hs0,5,19964,0.9509,thought id seen change thought knew well back page there tale tell guess saw did...,5
+word2vec_stemmed_vs100_w10_sg1_hs1,1,1420,0.9604,didnt say wasnt ready romance didnt promise would friend danced though slow danc...,5
+word2vec_stemmed_vs100_w10_sg1_hs1,2,11450,0.9599,im fortyone moon full make love well touch like touch like mademoiselle youre fr...,5
+word2vec_stemmed_vs100_w10_sg1_hs1,3,19964,0.9588,thought id seen change thought knew well back page there tale tell guess saw did...,5
+word2vec_stemmed_vs100_w10_sg1_hs1,4,19322,0.9573,fogged dallas way la staring screen flight delayed voice behind asked stranger c...,5
+word2vec_stemmed_vs100_w10_sg1_hs1,5,12200,0.9566,lost day found know know there thing wouldnt yesterday rough weather dear didnt ...,5
+word2vec_stemmed_vs100_w5_sg0_hs0,1,44667,0.9288,couldnt wait came late wasnt didnt care im sinking low go one goit bed share spe...,3
+word2vec_stemmed_vs100_w5_sg0_hs0,2,11450,0.9238,im fortyone moon full make love well touch like touch like mademoiselle youre fr...,3
+word2vec_stemmed_vs100_w5_sg0_hs0,3,19964,0.9236,thought id seen change thought knew well back page there tale tell guess saw did...,3
+word2vec_stemmed_vs100_w5_sg0_hs0,4,56605,0.9189,didnt sleep wink last night cause walked night sittin rottin hoping youd come kn...,3
+word2vec_stemmed_vs100_w5_sg0_hs0,5,1420,0.918,didnt say wasnt ready romance didnt promise would friend danced though slow danc...,3
+word2vec_stemmed_vs100_w5_sg0_hs1,1,19964,0.8919,thought id seen change thought knew well back page there tale tell guess saw did...,2
+word2vec_stemmed_vs100_w5_sg0_hs1,2,56605,0.8857,didnt sleep wink last night cause walked night sittin rottin hoping youd come kn...,2
+word2vec_stemmed_vs100_w5_sg0_hs1,3,11450,0.8843,im fortyone moon full make love well touch like touch like mademoiselle youre fr...,2
+word2vec_stemmed_vs100_w5_sg0_hs1,4,2570,0.8828,last night heaven today im still cloud arm heaven didnt know walked hurt walked ...,2
+word2vec_stemmed_vs100_w5_sg0_hs1,5,1420,0.8787,didnt say wasnt ready romance didnt promise would friend danced though slow danc...,2
+word2vec_stemmed_vs100_w5_sg1_hs0,1,11450,0.9554,im fortyone moon full make love well touch like touch like mademoiselle youre fr...,5
+word2vec_stemmed_vs100_w5_sg1_hs0,2,12242,0.9534,close paradise closer like im along ride happened unexpectedly promised wouldnt ...,5
+word2vec_stemmed_vs100_w5_sg1_hs0,3,19322,0.9492,fogged dallas way la staring screen flight delayed voice behind asked stranger c...,4
+word2vec_stemmed_vs100_w5_sg1_hs0,4,1420,0.9482,didnt say wasnt ready romance didnt promise would friend danced though slow danc...,4
+word2vec_stemmed_vs100_w5_sg1_hs0,5,50507,0.9481,many time said forever said love would always true somethin heart always knew id...,4
+word2vec_stemmed_vs100_w5_sg1_hs1,1,12242,0.9512,close paradise closer like im along ride happened unexpectedly promised wouldnt ...,5
+word2vec_stemmed_vs100_w5_sg1_hs1,2,19322,0.9505,fogged dallas way la staring screen flight delayed voice behind asked stranger c...,5
+word2vec_stemmed_vs100_w5_sg1_hs1,3,11450,0.9498,im fortyone moon full make love well touch like touch like mademoiselle youre fr...,4
+word2vec_stemmed_vs100_w5_sg1_hs1,4,19964,0.9494,thought id seen change thought knew well back page there tale tell guess saw did...,4
+word2vec_stemmed_vs100_w5_sg1_hs1,5,1420,0.9466,didnt say wasnt ready romance didnt promise would friend danced though slow danc...,4
